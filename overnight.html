@@ -1,0 +1,66 @@
+<body>
+  <h1>Travel Resort</h1>
+  <form action="">
+    <label for="first-name">First Name:</label>
+    <input type="email" name="email" />
+    <label for="email">Email:</label>
+    <input type="email" name="email" />
+    <fieldset>
+      <legend>Check In</legend>
+      <label for="check-in-date">Date:</label>
+      <input type="date" name="pickupDate" id="pickup-date" />
+      <label for="number-of-days">Number of days:</label>
+      <input type="number" required name="numberOfDays" id="number-of-days" />
+      <fieldset>
+        <legend>Room Options</legend>
+        <input type="checkbox" name="kingbed" id="king-bed" value="kingbed" />
+        <label for="king-bed">Single King Bed ($200.00/day)</label>
+
+        <input
+          type="checkbox"
+          name="queenbed"
+          id="queen-bed"
+          value="QueenBed"
+        />
+        <label for="queen-bed">Queen Bed ($185.00/day)</label>
+        <input
+          type="checkbox"
+          name="2-Bedroom Suite"
+          id="bedroom-suite"
+          value="bedroomsuite"
+        />
+        <label for="bedroom-suite">2-Bedroom Suite ($150.00/day)</label>
+      </fieldset>
+
+      
+      
+      <select name="adults" id="adults">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <label for="adults">adults</label>
+      <br />
+      <select name="children" id="children">
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      <label for="children">children</label>
+      
+    </fieldset>
+    <fieldset>
+      <legend>Under 25</legend>
+      <input type="radio" name="ynOption" id="yn-option" value="no" />
+      <label for="yn-option">No</label>
+      <input type="radio" name="ynOption" id="yn-option" value="yes" />
+      <label for="yn-option">Yes</label>
+    </fieldset>
+    <button type="submit">Estimated Total Cost</button>
+  </form>
+  <table>
+    <tbody>
+      <tr></tr>
+    </tbody>
+  </table>
+</body>
